@@ -61,7 +61,7 @@ data["year"] = data.pickup_datetime.dt.year
 data = data.drop(['pickup_datetime'], axis = 1)
 
 ###############################################################################
-## KNN regression
+## Categorical gradient boosting regression
 ###############################################################################
 # get feature and label
 X = data[['hour_of_day', 'weekday', 'month', 'year']]
